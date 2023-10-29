@@ -1,0 +1,22 @@
+<div class="border border-1 p-3">
+  <h1>{{nombre}}</h1>
+  <dl class="row">
+    <dt class="col-sm-3">Nombre:</dt>
+    <dd class="col-sm-9">{{nombre}}</dd>
+
+    <dt class="col-sm-3">Edad:</dt>
+    <dd class="col-sm-9">{{edad}} años</dd>
+
+    <dt class="col-sm-3">Método:</dt>
+    <dd class="col-sm-9">{{getHeroeDescription()}}</dd>
+
+    <dt class="col-sm-3">Capitalizado:</dt>
+    <dd class="col-sm-9">{{CapitalizarNombre}}</dd>
+
+  </dl>
+
+  <button *ngIf="nombre ==='Yiver'" (click)="cambiarDatos(true,false)" class="btn btn-success me-2">Cambiar nombre</button>
+  <button *ngIf="edad===30" (click)="cambiarDatos(false,true)" class="btn btn-success">cambiar edad</button>
+</div>
+
+

@@ -1,0 +1,11 @@
+<h2>Listado de Hermanos</h2>
+
+<h3>Nombre borrado: <small class="text-danger">{{nombreEliminado}}</small></h3>
+<button class="btn btn-danger" (click)="eliminarDato()">Eliminar registro</button>
+
+<div class="border border-1 p-2 mt-2">
+  <ul class="list-group list-group-flush">
+    <li *ngFor="let nombre of nombres" class="list-group-item">{{nombre}}</li>
+  </ul>
+</div>
+
